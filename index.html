@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="static/nigeerhuox16.ico.jpg">
+    <link rel="shortcut icon" href="static/pic/nigeerhuox16.ico.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>love</title>
-    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
 
-<img src="static/music-note-list.svg" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
+<img src="static/pic/music-note-list.svg" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
 <audio class="song-audio-autoplay" controls loop style="display: none;visibility: hidden">
-    <source src="./static/周杰伦 - 告白气球.flac"></source>
+    <source src="./static/audio/周杰伦-告白气球.mp3"></source>
     Your browser isn't invited for super fun audio time.
 </audio>
 
@@ -90,7 +90,7 @@
 </div>
 
 
-<script src="config.js"></script>
-<script src="static/index.js"></script>
+<script src="./static/js/config.js"></script>
+<script src="./static/js/index.js"></script>
 </body>
 </html>
