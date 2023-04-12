@@ -534,3 +534,76 @@ div#content {
     50%{ -webkit-transform: rotate(180deg);}
     100%{ -webkit-transform: rotate(360deg);}
 }
+
+/* 图标样式 */
+.nav__socials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+.nav__socials a {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 24px;
+  }
+@media only screen and (min-width: 768px) {
+    .nav__socials {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+  }
+  
+@media only screen and (min-width: 992px) {
+    .nav__socials {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      bottom: 20px;
+      top: auto;
+      left: auto;
+    }
+  }
+  
+@media only screen and (min-width: 1200px) {
+    .nav__socials {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+  }
+
+.nav__socials__link {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+.nav__socials__link svg {
+    fill: #083755;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  
+.nav__socials__link:hover svg {
+    fill: #f2aa4c;
+  }
+
